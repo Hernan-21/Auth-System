@@ -42,58 +42,46 @@ Sistema de autenticación moderno y seguro desarrollado con Laravel 11 y Vue 3, 
 
 ## ⚙️ Instalación
 
-1. **Crear nuevo proyecto Laravel**
-```bash
-composer create-project laravel/laravel auth-system
-cd auth-system
-```
-
-2. **Instalar Laravel Breeze con Vue**
-```bash
-composer require laravel/breeze --dev
-php artisan breeze:install vue
-```
-
-3. **Clonar el repositorio** (alternativa si no quieres crear desde cero)
+1. **Clonar el repositorio**
 ```bash
 git clone git@github.com:Hernan-21/Auth-System.git
 cd auth-system
 ```
 
-4. **Instalar dependencias de PHP**
+2. **Instalar dependencias de PHP**
 ```bash
 composer install
 ```
 
-5. **Instalar dependencias de Node.js**
+3. **Instalar dependencias de Node.js**
 ```bash
 npm install
 ```
 
-6. **Configurar el entorno**
+4. **Configurar el entorno**
 ```bash
 cp .env.example .env
 php artisan key:generate
 ```
 
-7. **Configurar la base de datos SQLite**
+5. **Configurar la base de datos SQLite**
 ```bash
 touch database/database.sqlite
 ```
 
-8. **Actualizar el archivo .env**
+6. **Actualizar el archivo .env**
 ```env
 DB_CONNECTION=sqlite
 DB_DATABASE=/ruta-absoluta/auth-system/database/database.sqlite
 ```
 
-9. **Establecer permisos**
+7. **Establecer permisos**
 ```bash
 chmod -R 775 storage bootstrap/cache
 chmod 666 database/database.sqlite
 ```
 
-10. **Ejecutar migraciones**
+8. **Ejecutar migraciones**
 ```bash
 php artisan migrate:fresh
 ```
