@@ -1,5 +1,6 @@
 <p align="center">
   <h1 align="center">Sistema de Autenticación Laravel + Vue</h1>
+  <img src=".github/auth-system.gif" alt="Demo del Sistema de Autenticación" width="100%">
 </p>
 
 <p align="center">
